@@ -19,7 +19,7 @@ function eqArrays(arr1,arr2){
 //Function to return an assert message
 
 function assertArraysEqual(arr1,arr2){
-  if (eqArrays(arr1,arr2)===true) {
+  if (eqArrays(arr1,arr2)) {
     console.log(`Assertion passed:[ ${arr1}] === [${arr2}]`);
   }
   else {
@@ -36,10 +36,10 @@ function without(arr,sub){
 const result=[];
 for(item of arr)
   if(!sub.includes(item)){
-    console.log(item);
+    
     result.push(item);
   }
-  console.log(result)
+  
   return (result);
 }
 //Test Data for checking without
