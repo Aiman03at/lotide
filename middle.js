@@ -23,21 +23,7 @@
   };
 //const assertArraysEqual = function(actual, expected) 
   
-// Function to evaluate whether two arrays are a perfect match
-function eqArrays(arr1,arr2){
-  if (arr1.length==arr2.length){                  //comparing lengths
-    for(let i=0;i<arr1.length;i++)
-      {
-        if(arr1[i]!==arr2[i]){
-          return(false);
-        }
-      }
-      return(true);
-  }  
-  else {
-    return(false);
-  }
-};
+
 
 //Function to return an assert message
 
