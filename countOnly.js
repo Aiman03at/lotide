@@ -37,16 +37,12 @@ const countOnly = function (allItems, itemsToCount) {
   for (const item of allItems) {
     
     if(itemsToCount[item]===true){
-      
-        let count=0;
-        for (const ele of allItems){
-        
-          if(ele===item){
-          count++;
-          
-          }
-        }  
-        countItem[item]=count ; 
+        if(!countItem[item]){
+        countItem[item]=1;
+        }
+        else{
+          countItem[item]++;
+        }
         
       
       }
