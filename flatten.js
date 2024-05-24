@@ -1,6 +1,11 @@
 //Flatten a multidimensional array into one -dimensional
 //Input:Multidimensional array
 //A flat Array
+/**
+ * 
+ * @param {Array} arr 
+ * @returns flattened array
+ */
 
 function flatten(arr){
   const res=[]

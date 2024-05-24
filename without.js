@@ -18,12 +18,12 @@ function eqArrays(arr1,arr2){
 
 //Function to return an assert message
 
-function assertArraysEqual(arr1,arr2){
-  if (eqArrays(arr1,arr2)) {
-    console.log(`Assertion passed:[ ${arr1}] === [${arr2}]`);
+function assertArrayequals(arr1,arr2){
+  if (eqArrays(arr1,arr2)===true) {
+    console.log(`✅✅✅Assertion passed:[ ${arr1}] === [${arr2}]`);
   }
   else {
-    console.log(`Asserion failed:[${arr1}]!==[${arr2}]`);
+    console.log(`🛑🛑🛑Asserion failed:[${arr1}]!==[${arr2}]`);
   }
 
 }
@@ -31,7 +31,12 @@ function assertArraysEqual(arr1,arr2){
 //Implementing without
 //Input source Array @arr and items to remove array @sub 
 //Another array @result that has contents of main array without contents of subarray
-
+/**
+ * 
+ * @param {Array} arr 
+ * @param {Array} sub 
+ * @returns Array with all the elements from array arr without the elements in subarray sub
+ */
 function without(arr,sub){
 const result=[];
 for(item of arr)

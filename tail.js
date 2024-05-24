@@ -1,11 +1,21 @@
+//Finding the last element in an array 
+//INPUT-Aray of elements
+//OUTPUT-array containing all the elements from main array except the first
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`Assertion passed:[ ${actual}] === [${expected}]`);
+    console.log(`✅✅✅Assertion passed:[ ${actual}] === [${expected}]`);
   }
   else {
-    console.log(`Asserion failed:[${actual}]!==[${expected}]`);
+    console.log(`🛑🛑🛑Asserion failed:[${actual}]!==[${expected}]`);
   }
 };
+
+/**
+ * 
+ * @param {Array} arr 
+ * @returns {Array} All elements except the first
+ */
 const tail=function(arr){
   let temp=[];
   if(arr.length===0 || arr.length===1) {
@@ -16,7 +26,7 @@ const tail=function(arr){
   else {
 
   for(let i=1;i<arr.length;i++)  {
-    console.log(arr[i]);
+    
     temp.push(arr[i]);
    }
    

@@ -14,14 +14,14 @@
 
     //AsserEqual function 
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion passed:[ ${actual}] === [${expected}]`);
-  }
-  else {
-    console.log(`Asserion failed:[${actual}]!==[${expected}]`);
-  }
-};
+    const assertEqual = function(actual, expected) {
+      if (actual === expected) {
+        console.log(`✅✅✅Assertion passed:[ ${actual}] === [${expected}]`);
+      }
+      else {
+        console.log(`🛑🛑🛑Asserion failed:[${actual}]!==[${expected}]`);
+      }
+    };
 
 /**
  * Count the number of times specific items from subset array are present inmain arrray

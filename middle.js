@@ -29,13 +29,19 @@
 
 function assertArrayequals(arr1,arr2){
   if (eqArrays(arr1,arr2)===true) {
-    console.log(`Assertion passed:[ ${arr1}] === [${arr2}]`);
+    console.log(`✅✅✅Assertion passed:[ ${arr1}] === [${arr2}]`);
   }
   else {
-    console.log(`Asserion failed:[${arr1}]!==[${arr2}]`);
+    console.log(`🛑🛑🛑Asserion failed:[${arr1}]!==[${arr2}]`);
   }
 
-}
+};
+/**
+ * 
+ * @param {Array} arr 
+ * @returns Array containing middle element if the size of array is odd
+ *           two mid elements if the size of Array is even
+ */
 // ACTUAL FUNCTION
 const middle = function(arr) {
   const res=[];
@@ -58,7 +64,8 @@ return(res);
 }
 
 
-//TEST DATA
+//TEST DATA 
+//checking the middle function
 middle([1, 2, 3, 4]); // => [2, 3]
 middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
 middle([1, 2, 3]); // => [2]
@@ -66,6 +73,7 @@ middle([1, 2, 3, 4, 5]); // => [3]
 
 
 //TEST DATA
+//Asserting the output
 assertArrayequals(middle([1, 2, 3, 4]),[2, 3]);
 assertArrayequals(middle([1, 2, 3, 4,5,6]),[3, 4]);
 assertArrayequals(middle([1, 2, 3, 4]),[ 3]);
