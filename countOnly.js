@@ -34,26 +34,24 @@ const assertEqual = function(actual, expected) {
 // itemsToCount: an object specifying what to count
 const countOnly = function (allItems, itemsToCount) {
   const countItem={};
-  for (const item in itemsToCount ) {
+  for (const item of allItems) {
     
     if(itemsToCount[item]===true){
-      if(allItems.includes(item)){
+      
         let count=0;
         for (const ele of allItems){
         
           if(ele===item){
           count++;
-          console.log(`${ele}==${count}`);
+          
           }
         }  
         countItem[item]=count ; 
-        console.log(countItem);
-      }
-      else{
-        countItem[item]=undefined;
+        
+      
       }
     }  
-  }
+  
     
     return (countItem);
 };
