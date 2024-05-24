@@ -23,7 +23,7 @@
 
     const countLetters=function(Sentence){
       const result={};
-      for (letter of Sentence){
+      for (let letter of Sentence){
         if(letter!==" "){
           if(!result[letter]){
             result[letter]=1;
@@ -38,7 +38,7 @@
        return(result);
       }
     result1=countLetters("lighthouse labs");
-    console.log(result1);
+    
     assertEqual(result1["l"],2);
     assertEqual(result1[" "],undefined);
     assertEqual(result1["y"],2);
