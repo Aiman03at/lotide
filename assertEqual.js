@@ -7,6 +7,7 @@
   * 
   * @param {string} actual 
   * @param {string} expected 
+  * @returns boolean-true if the strings are same else false
   */
 
 
