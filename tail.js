@@ -2,14 +2,7 @@
 //INPUT-Aray of elements
 //OUTPUT-array containing all the elements from main array except the first
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion passed:[ ${actual}] === [${expected}]`);
-  }
-  else {
-    console.log(`🛑🛑🛑Asserion failed:[${actual}]!==[${expected}]`);
-  }
-};
+const assertEqual=require("./assertEqual");
 
 /**
  * 
@@ -33,9 +26,12 @@ const tail=function(arr){
    return(temp);
   }
 }
-const result = tail(["Hello", "Lighthouse", "Labs"]);
+/*const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length,2);
 assertEqual(result[0],"Lighthouse");
 assertEqual(result[1],"Labs");
 const res=tail([]);
-assertEqual(res.length,0);
+assertEqual(res.length,0);*/
+
+//exporting the module
+module.exports=tail;
