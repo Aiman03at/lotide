@@ -26,12 +26,7 @@ const tail=function(arr){
    return(temp);
   }
 }
-/*const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length,2);
-assertEqual(result[0],"Lighthouse");
-assertEqual(result[1],"Labs");
-const res=tail([]);
-assertEqual(res.length,0);*/
+
 
 //exporting the module
 module.exports=tail;
