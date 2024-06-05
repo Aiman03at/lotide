@@ -26,3 +26,5 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual("Bootcamp", "Bootcamp");
 assertEqual(8, 1);
+
+module.exports = assertEqual;

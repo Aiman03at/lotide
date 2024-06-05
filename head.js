@@ -1,13 +1,6 @@
 
 //assert Equal Function
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion passed:[ ${actual}] === [${expected}]`);
-  }
-  else {
-    console.log(`🛑🛑🛑Asserion failed:[${actual}]!==[${expected}]`);
-  }
-};
+const assertEqual=require("./assertEqual");
 //INPUT-Takes an Array as an input
   //function parameter
 //OUTPUT-Returns the first element inthe given array
@@ -31,3 +24,4 @@ const head=function(arr){
 assertEqual(head([5, 6, 7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head([]), 5);
+
