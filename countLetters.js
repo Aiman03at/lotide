@@ -7,14 +7,8 @@
     //loopover the sentence and calculate the occurance of each letter
     
  //Assert Equal   
- const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion passed:[ ${actual}] === [${expected}]`);
-  }
-  else {
-    console.log(`🛑🛑🛑Asserion failed:[${actual}]!==[${expected}]`);
-  }
-};
+ const assertEqual = require("./assertEqual");
+
 
     /**
      * @param Sentence 
@@ -43,3 +37,5 @@
     assertEqual(result1[" "],undefined);
     assertEqual(result1["y"],2);
     assertEqual(result1["a"],1);
+
+    module.exports=countLetters;

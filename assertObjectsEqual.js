@@ -3,36 +3,7 @@
 //OUTPUT-Assertion message-Assertion passed if both objects are equal else Assertion fail.
 
 //EqObjects
-const eqObjects = function (object1, object2) {
-  const k1=Object.keys(object1);
-  const k2=Object.keys(object2);
-  
-  if(k1.length===k2.length){
-    
-    for(const k of k1){
-      
-      if(Array.isArray(object1[k]) && Array.isArray(object2[k])){
-        if(!(eqArrays(object1[k],object2[k]))){
-          return(false)
-        }
-      }
-      else{
-        if(object1[k]!==object2[k]){
-          console.log(object1[k]);
-          console.log(object2[k]);
-        
-          return(false);
-        }  
-      }
-    }
-      return(true);
-
-  }
-  else{
-    return(false);
-  }
-
-};
+const eqObjects=require("./eqObjects")
 
 // FUNCTION IMPLEMENTATION
 /**
@@ -54,10 +25,4 @@ const assertObjectsEqual = function (actual, expected) {
   console.log(`Example label: ${inspect(actual)}`);
 };
 
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-assertObjectsEqual(shirtObject,anotherShirtObject);
-
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-
-assertObjectsEqual(shirtObject,longSleeveShirtObject);
+module.exports=assertObjectsEqual;

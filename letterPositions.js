@@ -4,31 +4,10 @@
 
 
 //asertArray Equals ---comparing two arrays to see if they are same
-function assertArraysEqual(arr1,arr2){
-  if (eqArrays(arr1,arr2)===true) {
-    console.log(`✅✅✅Assertion passed:[ ${arr1}] === [${arr2}]`);
-  }
-  else {
-    console.log(`🛑🛑🛑Asserion failed:[${arr1}]!==[${arr2}]`);
-  }
-
-}
+const assertArraysEqual = require("./assertArraysEqual");
 // Checking whether arrays are equal
 //eqArrays
-function eqArrays(arr1,arr2){
-  if (arr1.length==arr2.length){                  //comparing lengths
-    for(let i=0;i<arr1.length;i++)
-      {
-        if(arr1[i]!==arr2[i]){
-          return(false);
-        }
-      }
-      return(true);
-  }  
-  else {
-    return(false);
-  }
-};
+const eqArrays = require("./eqArrays");
 /**
  * 
  * @param {String} sentence 
@@ -53,12 +32,6 @@ const letterPositions = function (sentence) {
   
   return results;
 };
-console.log(letterPositions("lighthouse in the house"));
 
-//TEST DATA
-assertArraysEqual(letterPositions("hello").e, [1]);
-assertArraysEqual(letterPositions("hello").l, [2]);
-assertArraysEqual(letterPositions("hello").o, [1]);
-assertArraysEqual(letterPositions("lighthouse in the house").h, [3,5,15,18]);
-assertArraysEqual(letterPositions("lighthouse in the house").e, [1]);
-assertArraysEqual(letterPositions("lighthouse in the house").e, [9,16,22]);
+
+module.exports=letterPositions;
