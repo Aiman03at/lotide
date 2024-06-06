@@ -3,7 +3,7 @@
 const assertEqual=require("./assertEqual");
 //INPUT-Takes an Array as an input
   //function parameter
-//OUTPUT-Returns the first element inthe given array
+//OUTPUT-Returns the first element in the given array
 
 
 /**
