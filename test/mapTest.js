@@ -1,8 +1,8 @@
 
 const assertArraysEqual=require("../assertArraysEqual");
-
+const map = require("../map");
 /////////TESTING USING ASSERTIONS//////////
-//const words = ["ground", "control", "to", "major", "tom"];
+const words = ["ground", "control", "to", "major", "tom"];
 const results1 = map(words, (word) => word[0]);
 const result2=map(words,(word)=>word.length);
 console.log(result2);

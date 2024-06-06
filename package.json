@@ -1,15 +1,17 @@
 {
-  "name": "lotide",
+  "name": "@aiman03at/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
+  "main": "index.js",
+  
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": {
+    "name": "aiman03at"},
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.1",

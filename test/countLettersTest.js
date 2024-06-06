@@ -1,4 +1,5 @@
-const countLetters=require("../countLetters")
+const countLetters = require("../countLetters")
+const assertEqual = require("../assertEqual");
 
 result1=countLetters("lighthouse labs");
     
